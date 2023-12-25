@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Amita"
+      rel="stylesheet"
+    />
+    <link href="../dist/output.css" rel="stylesheet" />
+    <title>VILLA</title>
+  </head>
+  <body class="font-Amita">
+    <!-- header1 -->
+    <header
+      class="w-full h-[8vh] bg-white lg:flex md:hidden hidden border-b-2 border-gray-500 items-center justify-between px-5"
+    >
+      <nav class="flex items-center justify-evenly w-[500px]">
+        <div class="flex items-center gap-2">
+          <img
+            src="./image/icons8-gmail-50.png"
+            class="w-[30px] h-[30px]"
+            alt=""
+          />
+          <p>info@company.com</p>
+        </div>
+        <div class="flex items-center gap-2">
+          <img
+            src="./image/icons8-document-50.png"
+            class="w-[30px] h-[30px]"
+            alt=""
+          />
+          <p>Sunny Isles Beach, FL 33160</p>
+        </div>
+      </nav>
+      <!-- ---------------------------------------------- -->
+      <nav class="flex items-center justify-between w-[250px] opacity-60">
+        <div
+          class="border-2 p-1 rounded-full border-black cursor-pointer bg-gray-300"
+        >
+          <img
+            src="./image/icons8-instagram-50.png"
+            alt="instagram"
+            class="w-[30px] h-[30px]"
+          />
+        </div>
+        <div
+          class="border-2 p-1 rounded-full border-black cursor-pointer bg-gray-300"
+        >
+          <img
+            src="./image/icons8-facebook-50.png"
+            alt="instagram"
+            class="w-[30px] h-[30px]"
+          />
+        </div>
+        <div
+          class="border-2 p-1 rounded-full border-black cursor-pointer bg-gray-300"
+        >
+          <img
+            src="./image/icons8-linkedin-50.png"
+            alt="instagram"
+            class="w-[30px] h-[30px]"
+          />
+        </div>
+        <div
+          class="border-2 p-1 rounded-full border-black cursor-pointer bg-gray-300"
+        >
+          <img
+            src="./image/icons8-twitter-50.png"
+            alt="instagram"
+            class="w-[30px] h-[30px]"
+          />
+        </div>
+      </nav>
+    </header>
+    <!-- header1 -->
+    <!-- ------------------ -->
+    <!-- -header2 -->
+    <header
+      class="w-full h-[12vh] bg-white z-30 relative flex items-center lg:justify-between md:justify-center px-5 md:text-sm text-sm border-b-2 border-black"
+      id="loadered2"
+    >
+      <nav class="header2-nav2">
+        <p class="text-3xl">VILLA</p>
+      </nav>
+      <!-- ---------------------------- -->
+      <!-- menuClick -->
+      <div
+        class="lg:hidden md:hidden inline-block cursor-pointer fixed right-0 px-2"
+        onclick="menuClick(this)"
+      >
+        <div
+          class="w-[35px] h-[5px] my-[6px] mx-0 transition-[0.4s] bg-[#333]"
+          id="bar1"
+        ></div>
+        <div
+          class="w-[35px] h-[5px] my-[6px] mx-0 transition-[0.4s] bg-[#333]"
+          id="bar2"
+        ></div>
+        <div
+          class="w-[35px] h-[5px] my-[6px] mx-0 transition-[0.4s] bg-[#333]"
+          id="bar3"
+        ></div>
+      </div>
+      <!-- menuClick -->
+      <!-- ---------------- -->
+      <!-- div inside menuClick -->
+      <div
+        class="absolute w-[90%] h-[25vh] py-2 top-[12vh] left-[5%] hidden border-2 bg-white"
+        id="navbarshowandhidden"
+      >
+        <div class="flex flex-col items-center gap-7">
+          <p class="w-full text-center text-[#f35525] cursor-pointer">Home</p>
+          <p class="w-full text-center hover:text-[#f35525] cursor-pointer">
+            Properties
+          </p>
+          <p class="w-full text-center hover:text-[#f35525] cursor-pointer">
+            Property Details
+          </p>
+          <p class="w-full text-center hover:text-[#f35525] cursor-pointer">
+            Contact Us
+          </p>
+        </div>
+      </div>
+      <!-- div inside menuClick -->
+
+      <nav
+        class="lg:w-[900px] md:w-[700px] lg:flex md:flex hidden items-center justify-evenly"
+      >
+        <p class="lg:text-xl md:text-sm text-sm text-[#f35525] cursor-pointer">
+          Home
+        </p>
+        <p
+          class="lg:text-xl md:text-sm text-sm hover:text-[#f35525] cursor-pointer"
+        >
+          Properties
+        </p>
+        <p
+          class="lg:text-xl md:text-sm text-sm hover:text-[#f35525] cursor-pointer"
+        >
+          Property Details
+        </p>
+        <p
+          class="lg:text-xl md:text-sm text-sm hover:text-[#f35525] cursor-pointer"
+        >
+          Contact Us
+        </p>
+        <div
+          class="bg-black rounded-full cursor-pointer w-[200px] h-[40px] text-white flex items-center justify-center gap-3 relative"
+        >
+          <p class="hover:text-[#f35525]">Schedule a visit</p>
+          <div
+            class="bg-[#f35525] w-[40px] h-[40px] flex items-center justify-center absolute left-0 rounded-full top-0"
+          >
+            <img
+              src="./image/icons8-calendar-24.png"
+              class="w-[30px] h-[30px]"
+              alt=""
+            />
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- -header2 -->
+    <!-- ------------------- -->
+    <!-- navigationSlider -->
+    <section class="w-full lg:h-[120vh] md:h-[100vh] h-[400px]">
+      <div class="w-full lg:h-[120vh] md:h-[100vh] h-[400px] relative">
+        <!-- ---- -->
+        <div class="mySlides lg:h-full md:h-full w-full h-[400px]">
+          <img
+            src="./image/banner-01.jpg"
+            class="lg:w-full lg:h-full md:w-full md:h-full w-full h-[400px]"
+            alt="banner"
+          />
+          <div
+            class="text absolute lg:w-[50%] md:w-[50%] w-[200px] lg:h-[350px] md:h-[350px] h-[150px] lg:left-72 md:left-32 left-16 lg:top-[200px] md:top-[200px] top-32"
+          >
+            <div
+              class="bg-white p-3 w-[200px] h-[50px] font-bold lg:text-2xl md:text-2xl text-sm flex items-center lg:justify-center md:justify-center justify-start"
+            >
+              toronto,<span class="text-[#f35525]">canada</span>
+            </div>
+            <h2 class="lg:text-6xl md:text-6xl text-sm mt-2 text-white">
+              Hurry!<br />Get the Best Villa for you
+            </h2>
+          </div>
+        </div>
+        <!-- ----- -->
+        <div class="mySlides lg:h-full md:h-full w-full h-[400px]">
+          <img
+            src="./image/banner-02.jpg"
+            class="lg:w-full lg:h-full md:w-full md:h-full w-full h-[400px]"
+            alt="banner"
+          />
+          <div
+            class="text absolute lg:w-[50%] md:w-[50%] w-[200px] lg:h-[350px] md:h-[350px] h-[150px] lg:left-72 md:left-32 left-16 lg:top-[200px] md:top-[200px] top-32"
+          >
+            <div
+              class="bg-white p-3 lg:w-[260px] md:w-[260px] w-[200px] h-[50px] font-bold lg:text-2xl md:text-2xl text-sm flex items-center lg:justify-center md:justify-center justify-start"
+            >
+              Melbourne,<span class="text-[#f35525]">Australia</span>
+            </div>
+            <h2 class="lg:text-6xl md:text-6xl text-sm mt-2 text-white">
+              Be Quick!<br />Get the best villa in town
+            </h2>
+          </div>
+        </div>
+        <!-- -------------- -->
+        <div class="mySlides lg:h-full md:h-full w-full h-[400px]">
+          <img
+            src="./image/banner-03.jpg"
+            class="lg:w-full lg:h-full md:w-full md:h-full w-full h-[400px]"
+            alt="banner"
+          />
+          <div
+            class="text absolute lg:w-[50%] md:w-[50%] w-[200px] lg:h-[350px] md:h-[350px] h-[150px] lg:left-72 md:left-32 left-16 lg:top-[200px] md:top-[200px] top-32"
+          >
+            <div
+              class="bg-white p-3 lg:w-[250px] md:w-[250px] w-[200px] h-[50px] font-bold lg:text-2xl md:text-2xl text-sm flex items-center lg:justify-center md:justify-center justify-start"
+            >
+              Miami,<span class="text-[#f35525]">South Florida</span>
+            </div>
+            <h2 class="lg:text-6xl md:text-6xl text-sm mt-2 text-white">
+              Act Now!<br />Get the highest level penthouse
+            </h2>
+          </div>
+        </div>
+        <!-- -------- -->
+        <!-- left and right -->
+        <a
+          onclick="plusSlides(1)"
+          href="#"
+          class="absolute lg:top-[60vh] md:top-[50vh] top-[200px] right-1"
+          ><img
+            src="./image/icons8-arrow-50-right.png"
+            class="w-[40px] h-[40px] bg-white rounded-full p-3 hover:bg-gray-300"
+            alt="right"
+        /></a>
+        <a
+          onclick="plusSlides(-1)"
+          href="#"
+          class="absolute lg:top-[60vh] md:top-[50vh] top-[200px] left-1"
+          ><img
+            src="./image/icons8-arrow-50.png"
+            class="w-[40px] h-[40px] bg-white rounded-full p-3 hover:bg-gray-300"
+            alt="left"
+        /></a>
+        <!-- left and right -->
+      </div>
+    </section>
+
+    <!-- navigationSlider -->
+    <!-- ------------------------------------ -->
+    <!-- navigation1 -->
+    <section
+      class="w-full lg:h-[100vh] md:h-[240vh] h-[200vh] flex lg:flex-row md:flex-col flex-col items-start py-4"
+    >
+      <div
+        class="w-full lg:h-[95vh] md:h-[160vh] md:gap-14 lg:gap-0 gap-14 py-2 flex lg:flex-row md:flex-col flex-col items-center lg:justify-end md:justify-start"
+      >
+        <div class="relative">
+          <img
+            src="./image/featured.jpg"
+            class="lg:w-[400px] lg:h-[600px] md:w-[400px] md:h-[600px] w-[300px] h-[400px]"
+            alt="featured"
+          />
+          <div
+            class="bg-orange-400 cursor-pointer rounded-full w-[110px] h-[110px] absolute -bottom-10 -left-14 flex items-center justify-center"
+          >
+            <img
+              src="./image/icons8-document-69.png"
+              class="w-[60px] h-[64px]"
+              alt="document"
+            />
+          </div>
+        </div>
+        <div class="flex flex-col w-[600px] px-3 h-[520px] gap-2">
+          <p
+            class="text-red-400 font-bold lg:text-left md:text-left text-center"
+          >
+            | FEATURED
+          </p>
+          <p
+            class="lg:text-5xl md:text-5xl text-2xl font-bold lg:text-left md:text-left text-center"
+          >
+            Best Appartment <br />& Sea View
+          </p>
+          <div>
+            <button class="accordion w-full h-[52px] border-b-2">
+              Section 1
+            </button>
+            <div class="panel overflow-hidden">
+              <p class="text-center">
+                Get the best villa website template in HTML CSS and Bootstrap
+                for your business. TemplateMo provides you the best free CSS
+                templates in the world. Please tell your friends about it.
+              </p>
+            </div>
+
+            <button class="accordion w-full h-[52px] border-b-2">
+              Section 2
+            </button>
+            <div class="panel overflow-hidden">
+              <p class="text-center">
+                Dolor almesit amet, consectetur adipiscing elit, sed doesn't
+                eiusmod tempor incididunt ut labore consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua.
+              </p>
+            </div>
+
+            <button class="accordion w-full h-[52px] border-b-2">
+              Section 3
+            </button>
+            <div class="panel overflow-hidden">
+              <p class="text-center">
+                Dolor almesit amet, consectetur adipiscing elit, sed doesn't
+                eiusmod tempor incididunt ut labore consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ---------------- -->
+      <div
+        class="lg:w-[40%] md:w-full w-full lg:h-[95vh] md:h-[70vh] h-[70vh] flex lg:items-center md:items-start py-2 justify-center"
+      >
+        <div
+          class="bg-white shadow-2xl lg:w-[300px] md:w-11/12 w-11/12 lg:h-[500px] md:h-[500px] h-[90%] flex flex-col px-2 justify-evenly"
+        >
+          <div class="flex border-b-2 gap-3 w-full lg:justify-center">
+            <div>
+              <img
+                src="./image/info-icon-01.png"
+                class="w-[52px] h-[52px]"
+                alt=""
+              />
+            </div>
+            <div class="flex flex-col">
+              <p>250 m2</p>
+              <p>Total Flat Space</p>
+            </div>
+          </div>
+          <div class="flex border-b-2 gap-3 w-full lg:justify-center">
+            <div>
+              <img
+                src="./image/info-icon-02.png"
+                class="w-[52px] h-[52px]"
+                alt=""
+              />
+            </div>
+            <div class="flex flex-col">
+              <p>250 m2</p>
+              <p>Total Flat Space</p>
+            </div>
+          </div>
+          <div class="flex border-b-2 gap-3 w-full lg:justify-center">
+            <div>
+              <img
+                src="./image/info-icon-03.png"
+                class="w-[52px] h-[52px]"
+                alt=""
+              />
+            </div>
+            <div class="flex flex-col">
+              <p>250 m2</p>
+              <p>Total Flat Space</p>
+            </div>
+          </div>
+          <div class="flex w-full gap-3 lg:justify-center">
+            <div>
+              <img
+                src="./image/info-icon-04.png"
+                class="w-[52px] h-[52px]"
+                alt=""
+              />
+            </div>
+            <div class="flex flex-col">
+              <p>250 m2</p>
+              <p>Total Flat Space</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- navigation1 -->
+    <!-- ---------------------- -->
+    <!-- navigation2 -->
+    <section
+      class="bg-[url('../src/image/video-bg.jpg')] w-full lg:h-[80vh] md:h-[70vh] h-[70vh] bg-no-repeat bg-center bg-cover flex flex-col items-center relative"
+    >
+      <div
+        class="w-full h-[20vh] flex flex-col items-center justify-center mt-6"
+      >
+        <p class="text-red-500">| VIDEO VIEW</p>
+        <p class="text-4xl text-white">
+          Get Closer View &<br />
+          Different Feeling
+        </p>
+      </div>
+      <img
+        src="./image/video-frame.jpg"
+        class="lg:w-[1076px] lg:h-[482px] md:w-[696px] mdh-[312px] w-11/12 h-[231px] rounded-2xl absolute lg:-bottom-52 md:-bottom-20 bottom-7"
+        alt=""
+      />
+      <div
+        class="bg-red-400 w-[100px] cursor-pointer h-[100px] flex items-center justify-center rounded-full absolute bottom-24 bg-opacity-50 md:-bottom-5 lg:-bottom-7"
+      >
+        <div
+          class="bg-white w-[60px] h-[60px] rounded-full flex items-center justify-center"
+        >
+          <img
+            src="../src/image/icons8-play-50.png"
+            class="w-[40px] h-[40px]"
+            alt="play"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- navigation2 -->
+    <!-- ------------------------- -->
+    <!-- navigation3 -->
+    <section class="w-full h-[80vh] flex items-center justify-center">
+      <div
+        class="grid lg:grid-cols-3 lg:grid-rows-1 lg:gap-32 md:gap-20 gap-20 lg:mt-28 md:mt-28 mt-2"
+      >
+        <div
+          class="bg-[#ffeee9] rounded-2xl w-[270px] h-[96px] relative flex items-center justify-center"
+        >
+          <div class="flex gap-5">
+            <p class="text-4xl text text-orange-600 font-bold">34</p>
+            <p class="font-bold">Buildings <br />Finished Now</p>
+          </div>
+          <div
+            class="w-[50px] h-[50px] bg-orange-500 absolute rounded-full -top-5 -right-5"
+          ></div>
+        </div>
+        <div
+          class="bg-[#ffeee9] rounded-2xl w-[270px] h-[96px] relative flex items-center justify-center"
+        >
+          <div class="flex gap-5">
+            <p class="text-4xl text text-orange-600 font-bold">12</p>
+            <p class="font-bold">Years <br />Experience</p>
+          </div>
+          <div
+            class="w-[50px] h-[50px] bg-orange-500 absolute rounded-full -top-5 -right-5"
+          ></div>
+        </div>
+        <div
+          class="bg-[#ffeee9] rounded-2xl w-[270px] h-[96px] relative flex items-center justify-center"
+        >
+          <div class="flex gap-5">
+            <p class="text-4xl text text-orange-600 font-bold">24</p>
+            <p class="font-bold">Awwards <br />Won 2023</p>
+          </div>
+          <div
+            class="w-[50px] h-[50px] bg-orange-500 absolute rounded-full -top-5 -right-5"
+          ></div>
+        </div>
+      </div>
+    </section>
+    <!-- navigation3 -->
+    <!-- ------------------------ -->
+    <!-- navigation4 -->
+    <section
+      class="bg-[#fafafa] w-full lg:h-[100vh] md:h-[220vh] h-[220vh] flex flex-col"
+    >
+      <div
+        class="w-full h-[50vh] flex lg:flex-row md:flex-col flex-col items-center justify-evenly"
+      >
+        <div class="flex flex-col gap-4">
+          <p class="text-red-500">| BEST DEAL</p>
+          <p class="text-5xl font-bold text-black">
+            Find Your Best Deal<br />
+            Right Now!
+          </p>
+        </div>
+        <div class="flex items-center gap-5">
+          <button
+            class="bg-orange-500 py-3 px-6 text-white font-bold rounded-xl"
+          >
+            Appartment
+          </button>
+          <button class="bg-black py-3 px-6 text-white font-bold rounded-xl">
+            VILLA HOUSE
+          </button>
+          <button class="bg-black py-3 px-6 text-white font-bold rounded-xl">
+            PENTHOUSE
+          </button>
+        </div>
+      </div>
+      <!-- --------------- -->
+      <div class="w-full h-full flex lg:flex-row md:flex-col flex-col">
+        <div
+          class="lg:w-4/6 md:w-full w-full h-full flex items-center justify-center"
+        >
+          <div
+            class="bg-white w-[306px] h-[378px] flex flex-col items-center justify-between py-3 shadow-2xl rounded-xl"
+          >
+            <p class="flex gap-10 border-b-2 text-xl">
+              Total Flat Space<span class="font-bold text-2xl">185 m2</span>
+            </p>
+            <p class="flex gap-10 border-b-2 text-xl">
+              Floor number<span class="font-bold text-2xl">26th</span>
+            </p>
+            <p class="flex gap-10 border-b-2 text-xl">
+              Number of rooms<span class="font-bold text-2xl">4</span>
+            </p>
+            <p class="flex gap-10 border-b-2 text-xl">
+              Parking Available<span class="font-bold text-2xl">Yes</span>
+            </p>
+            <p class="flex gap-10 text-xl">
+              Payment Process<span class="font-bold text-2xl">Bank</span>
+            </p>
+          </div>
+        </div>
+        <div class="w-full h-full flex items-center justify-center">
+          <img
+            src="../src/image/property-05.jpg"
+            class="lg:w-[636px] lg:h-[414px] md:w-[636px] md:h-[414px] w-[442px] h-[335px]"
+            alt=""
+          />
+        </div>
+        <div
+          class="lg:w-4/6 md:w-full w-full h-full flex items-center justify-center"
+        >
+          <div
+            class="bg-white w-[306px] h-[414px] flex flex-col items-start justify-between py-3 px-3"
+          >
+            <p class="font-bold">Extra Info About Property</p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, do
+              eiusmod tempor pack incididunt ut labore et dolore magna aliqua
+              quised ipsum suspendisse.
+            </p>
+            <p>
+              When you need free CSS templates, you can simply type TemplateMo
+              in any search engine website. In addition, you can type TemplateMo
+              Portfolio, TemplateMo One Page Layouts, etc.
+            </p>
+            <div
+              class="bg-black rounded-full cursor-pointer w-[200px] h-[40px] text-white flex items-center justify-center gap-3 relative"
+            >
+              <p class="hover:text-[#f35525]">Schedule a visit</p>
+              <div
+                class="bg-[#f35525] w-[40px] h-[40px] flex items-center justify-center absolute left-0 rounded-full top-0"
+              >
+                <img
+                  src="./image/icons8-calendar-24.png"
+                  class="w-[30px] h-[30px]"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- navigation4 -->
+    <!-- ------------------------- -->
+    <!-- navigation5 -->
+    <section
+      class="w-full h-[30vh] flex flex-col items-center justify-center gap-3"
+    >
+      <p class="text-red-500">| PROPERTIES</p>
+      <p class="text-5xl text-black">
+        We Provide The Best<br />
+        Property You Like
+      </p>
+    </section>
+    <!-- navigation5 -->
+    <!-- ------------------------- -->
+    <!-- navigation6 -->
+    <section
+      class="w-full lg:h-[180vh] md:h-[260vh] h-[580vh] grid lg:grid-cols-3 lg:grid-rows-2 md:grid-cols-2 md:grid-rows-3 grid-cols-1 grid-rows-6 justify-items-center items-center"
+    >
+      <div
+        class="lg:w-[416px] lg:h-[602px] md:w-[336px] md:h-[565px] w-[442px] h-[621px] bg-[#fafafa] flex flex-col items-start justify-evenly"
+      >
+        <div class="flex items-center justify-center w-full">
+          <img
+            src="../src/image/property-01.jpg"
+            class="lg:w-[356px] lg:h-[264] md:w-[276px] md:h-[205px] w-[382px] h-[283px] rounded-xl"
+            alt=""
+          />
+        </div>
+        <div class="flex items-center justify-between w-full px-3">
+          <p class="bg-orange-400 py-1 px-5 rounded-xl">Luxury Villa</p>
+          <p class="text-orange-600 text-2xl font-bold">$2.264.000</p>
+        </div>
+        <div class="text-left px-3 text-2xl font-bold">
+          18 New Street Miami, OR 97219
+        </div>
+        <div class="flex flex-col px-3">
+          <div class="flex gap-6">
+            <p>Bedrooms: 8</p>
+            <p>Bathrooms: 8</p>
+          </div>
+          <div class="flex gap-6">
+            <p>Area: 545m2</p>
+            <p>Floor: 3</p>
+            <p>Parking: 6 spots</p>
+          </div>
+        </div>
+        <div class="flex w-full items-center justify-center">
+          <button
+            class="text-white bg-black w-[170px] h-[40px] rounded-2xl hover:bg-[#f35525]"
+          >
+            schedule a visit
+          </button>
+        </div>
+      </div>
+      <div
+        class="lg:w-[416px] lg:h-[602px] md:w-[336px] md:h-[565px] w-[442px] h-[621px] bg-[#fafafa] flex flex-col items-start justify-evenly"
+      >
+        <div class="flex items-center justify-center w-full">
+          <img
+            src="../src/image/property-02.jpg"
+            class="lg:w-[356px] lg:h-[264] md:w-[276px] md:h-[205px] w-[382px] h-[283px] rounded-xl"
+            alt=""
+          />
+        </div>
+        <div class="flex items-center justify-between w-full px-3">
+          <p class="bg-orange-400 py-1 px-5 rounded-xl">Luxury Villa</p>
+          <p class="text-orange-600 text-2xl font-bold">$1.180.000</p>
+        </div>
+        <div class="text-left px-3 text-2xl font-bold">
+          54 Mid Street Florida, OR 27001
+        </div>
+        <div class="flex flex-col px-3">
+          <div class="flex gap-6">
+            <p>Bedrooms: 6</p>
+            <p>Bathrooms: 5</p>
+          </div>
+          <div class="flex gap-6">
+            <p>Area: 450m2</p>
+            <p>Floor: 3</p>
+            <p>Parking: 8 spots</p>
+          </div>
+        </div>
+        <div class="flex w-full items-center justify-center">
+          <button
+            class="text-white bg-black w-[170px] h-[40px] rounded-2xl hover:bg-[#f35525]"
+          >
+            schedule a visit
+          </button>
+        </div>
+      </div>
+      <div
+        class="lg:w-[416px] lg:h-[602px] md:w-[336px] md:h-[565px] w-[442px] h-[621px] bg-[#fafafa] flex flex-col items-start justify-evenly"
+      >
+        <div class="flex items-center justify-center w-full">
+          <img
+            src="../src/image/property-03.jpg"
+            class="lg:w-[356px] lg:h-[264] md:w-[276px] md:h-[205px] w-[382px] h-[283px] rounded-xl"
+            alt=""
+          />
+        </div>
+        <div class="flex items-center justify-between w-full px-3">
+          <p class="bg-orange-400 py-1 px-5 rounded-xl">Luxury Villa</p>
+          <p class="text-orange-600 text-2xl font-bold">$1.460.000</p>
+        </div>
+        <div class="text-left px-3 text-2xl font-bold">
+          26 Old Street Miami, OR 38540
+        </div>
+        <div class="flex flex-col px-3">
+          <div class="flex gap-6">
+            <p>Bedrooms: 5</p>
+            <p>Bathrooms: 4</p>
+          </div>
+          <div class="flex gap-6">
+            <p>Area: 525m2</p>
+            <p>Floor: 3</p>
+            <p>Parking: 10 spots</p>
+          </div>
+        </div>
+        <div class="flex w-full items-center justify-center">
+          <button
+            class="text-white bg-black w-[170px] h-[40px] rounded-2xl hover:bg-[#f35525]"
+          >
+            schedule a visit
+          </button>
+        </div>
+      </div>
+      <div
+        class="lg:w-[416px] lg:h-[602px] md:w-[336px] md:h-[565px] w-[442px] h-[621px] bg-[#fafafa] flex flex-col items-start justify-evenly"
+      >
+        <div class="flex items-center justify-center w-full">
+          <img
+            src="../src/image/property-04.jpg"
+            class="lg:w-[356px] lg:h-[264] md:w-[276px] md:h-[205px] w-[382px] h-[283px] rounded-xl"
+            alt=""
+          />
+        </div>
+        <div class="flex items-center justify-between w-full px-3">
+          <p class="bg-orange-400 py-1 px-5 rounded-xl">appartment</p>
+          <p class="text-orange-600 text-2xl font-bold">$584.500</p>
+        </div>
+        <div class="text-left px-3 text-2xl font-bold">
+          12 New Street Miami, OR 12650
+        </div>
+        <div class="flex flex-col px-3">
+          <div class="flex gap-6">
+            <p>Bedrooms: 4</p>
+            <p>Bathrooms: 3</p>
+          </div>
+          <div class="flex gap-6">
+            <p>Area: 125m2</p>
+            <p>Floor: 25th</p>
+            <p>Parking: 2 cars</p>
+          </div>
+        </div>
+        <div class="flex w-full items-center justify-center">
+          <button
+            class="text-white bg-black w-[170px] h-[40px] rounded-2xl hover:bg-[#f35525]"
+          >
+            schedule a visit
+          </button>
+        </div>
+      </div>
+      <div
+        class="lg:w-[416px] lg:h-[602px] md:w-[336px] md:h-[565px] w-[442px] h-[621px] bg-[#fafafa] flex flex-col items-start justify-evenly"
+      >
+        <div class="flex items-center justify-center w-full">
+          <img
+            src="../src/image/property-05.jpg"
+            class="lg:w-[356px] lg:h-[264] md:w-[276px] md:h-[205px] w-[382px] h-[283px] rounded-xl"
+            alt=""
+          />
+        </div>
+        <div class="flex items-center justify-between w-full px-3">
+          <p class="bg-orange-400 py-1 px-5 rounded-xl">Penthouse</p>
+          <p class="text-orange-600 text-2xl font-bold">$925.600</p>
+        </div>
+        <div class="text-left px-3 text-2xl font-bold">
+          34 Beach Street Miami, OR 42680
+        </div>
+        <div class="flex flex-col px-3">
+          <div class="flex gap-6">
+            <p>Bedrooms: 4</p>
+            <p>Bathrooms: 4</p>
+          </div>
+          <div class="flex gap-6">
+            <p>Area: 180m2</p>
+            <p>Floor: 38th</p>
+            <p>Parking: 2 cars</p>
+          </div>
+        </div>
+        <div class="flex w-full items-center justify-center">
+          <button
+            class="text-white bg-black w-[170px] h-[40px] rounded-2xl hover:bg-[#f35525]"
+          >
+            schedule a visit
+          </button>
+        </div>
+      </div>
+      <div
+        class="lg:w-[416px] lg:h-[602px] md:w-[336px] md:h-[565px] w-[442px] h-[621px] bg-[#fafafa] flex flex-col items-start justify-evenly"
+      >
+        <div class="flex items-center justify-center w-full">
+          <img
+            src="../src/image/property-06.jpg"
+            class="lg:w-[356px] lg:h-[264] md:w-[276px] md:h-[205px] w-[382px] h-[283px] rounded-xl"
+            alt=""
+          />
+        </div>
+        <div class="flex items-center justify-between w-full px-3">
+          <p class="bg-orange-400 py-1 px-5 rounded-xl">Modern Condo</p>
+          <p class="text-orange-600 text-2xl font-bold">$450.000</p>
+        </div>
+        <div class="text-left px-3 text-2xl font-bold">
+          22 New Street Portland, OR 16540
+        </div>
+        <div class="flex flex-col px-3">
+          <div class="flex gap-6">
+            <p>Bedrooms: 3</p>
+            <p>Bathrooms: 2</p>
+          </div>
+          <div class="flex gap-6">
+            <p>Area: 165m2</p>
+            <p>Floor: 26th</p>
+            <p>Parking: 3 cars</p>
+          </div>
+        </div>
+        <div class="flex w-full items-center justify-center">
+          <button
+            class="text-white bg-black w-[170px] h-[40px] rounded-2xl hover:bg-[#f35525]"
+          >
+            schedule a visit
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- navigation6 -->
+    <!-- -------------------------- -->
+    <!-- navigation7 -->
+    <section
+      class="w-full lg:h-[70vh] md:h-[40vh] h-[40vh] bg-[url('../src/image/contact-bg.jpg')] bg-no-repeat bg-center bg-cover flex flex-col items-center justify-between relative"
+    >
+      <div
+        class="w-full h-[30vh] flex flex-col items-center justify-center gap-2"
+      >
+        <p class="text-red-500 font-bold">| CONTACT US</p>
+        <p class="text-5xl text-white">
+          Get In Touch With<br />
+          Our Agents
+        </p>
+      </div>
+    </section>
+    <!-- navigation7 -->
+    <!-- -------------------- -->
+    <!-- navigation8 -->
+    <section
+      class="w-full lg:h-[65vh] md:h-[140vh] h-[135vh] flex lg:flex-row md:flex-col flex-col lg:items-start md:items-center items-center lg:relative"
+    >
+      <div class="flex lg:flex-row md:flex-col flex-col px-10 py-4 gap-6">
+        <div
+          class="w-[385px] h-[118px] flex items-center justify-center gap-5 shadow-2xl border-2"
+        >
+          <div>
+            <img
+              src="../src/image/phone-icon.png"
+              class="w-[52px] h-[52px]"
+              alt="email"
+            />
+          </div>
+          <div class="flex flex-col">
+            <p class="text-2xl">010-020-0340</p>
+            <p>Phone Number</p>
+          </div>
+        </div>
+        <div
+          class="w-[385px] h-[118px] flex items-center justify-center gap-5 shadow-2xl border-2"
+        >
+          <div>
+            <img
+              src="../src/image/icons8-gmail-50.png"
+              class="w-[52px] h-[52px]"
+              alt="email"
+            />
+          </div>
+          <div class="flex flex-col">
+            <p class="text-2xl">info@villa.co</p>
+            <p>Business Email</p>
+          </div>
+        </div>
+      </div>
+
+      <form
+        class="lg:w-[496px] lg:h-[678px] md:w-[696px] md:h-[678px] w-[442px] h-[678px] border-2 rounded-xl lg:absolute lg:right-20 lg:-top-[250px] bg-white shadow-2xl flex flex-col items-center justify-evenly"
+      >
+        <label class="w-full text-left px-3 font-bold">fullName</label>
+        <input
+          type="text"
+          class="w-[90%] rounded-xl bg-gray-300 p-2"
+          placeholder="yourName"
+        />
+        <label class="w-full text-left px-3 font-bold">emailAddress</label>
+        <input
+          type="text"
+          class="w-[90%] rounded-xl bg-gray-300 p-2"
+          placeholder="yourE-mail"
+        />
+        <label class="w-full text-left px-3 font-bold">subject</label>
+        <input
+          type="text"
+          class="w-[90%] rounded-xl bg-gray-300 p-2"
+          placeholder="subject"
+        />
+        <label class="w-full text-left px-3 font-bold">massage</label>
+        <textarea
+          cols="30"
+          rows="10"
+          class="w-[90%] rounded-xl bg-gray-300 p-2"
+          placeholder="yourMassage"
+        ></textarea>
+        <button
+          class="bg-black py-3 px-7 text-white rounded-2xl hover:bg-[#f35525]"
+        >
+          send massage
+        </button>
+      </form>
+    </section>
+    <!-- navigation8 -->
+    <!-- ---------------------- -->
+    <!-- footer -->
+    <footer class="w-full h-[15vh] bg-black flex items-center justify-center">
+      <p class="text-white lg:text-lg md:text-lg text-sm text-center">
+        Copyright © 2048 Villa Agency Co., Ltd. All rights reserved. Design:
+        TemplateMo
+      </p>
+    </footer>
+    <!-- footer -->
+  </body>
+
+  <script src="./java.js"></script>
+</html>

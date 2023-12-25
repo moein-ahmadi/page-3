@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* header2--menu */
+.show #bar1 {
+  @apply translate-x-0 translate-y-[11px] -rotate-45;
+}
+.show #bar2 {
+  @apply opacity-0;
+}
+.show #bar3 {
+  @apply translate-x-0 translate-y-[-11px] rotate-45;
+}
+
+/* header2--menu */
+
+/* scroll */
+.sticky {
+  @apply fixed top-0 w-full;
+}
+
+/* scroll */
